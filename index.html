@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습예제_뚜레쥬르</title>
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 베이스서식 -->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- 공통서식 -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <!-- 레이아웃 -->
+    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+
+</head>
+<body>
+    <!-- 헤더영역시작 -->
+    <header>
+        <h1><a href="index.html" title="뚜레쥬르메인화면가기"><img src="./img/logo.png" alt="뚜레쥬르로고"></a></h1>
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><i class="fas fa-bars"></i></label>
+        <a href="mypage.html" title="마이페이지가기"><i class="fas fa-user-alt"></i></a>
+
+        <!-- 내비게이션 -->
+        <nav class="gnb">
+            <label for="toggle"><i class="fas fa-times"></i></label>
+            <div class="inner">
+                <h2><img src="./img/log_title.png" alt="내비게이션로고"></h2>
+                <ul>
+                    <li>
+                        <a href="order.html" title="주문/배송조회">
+                            <img src="./img/bg_order.png" alt="주문배송조회">
+                            <span>주문/배송조회</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event.html" title="이벤트">
+                            <img src="./img/bg_gift03.png" alt="선물">
+                            <span>이벤트</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" title="뚜레쥬르 쇼핑몰 가기"><i class="fas fa-shopping-cart"></i>뚜레쥬르 쇼핑몰 가기</a>
+            </div>
+
+            <ul >
+                <li>
+                    <input type="radio" id="story" name="a">
+                    <label for="story">브랜드 스토리 <i class="fas fa-plus"></i></label>
+                    <ul class="sub">
+                        <li><a href="#" title="브랜드 스토리"> &bull; 브랜드 스토리</a></li>
+                        <li><a href="#" title="뚜레쥬르 광고"> &bull; 뚜레쥬르 광고</a></li>
+                        <li><a href="#" title="뚜레쥬르 재료 이야기"> &bull; 뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#" title="글로벌 뚜레쥬르"> &bull; 글로벌 뚜레쥬르</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" id="new" name="a">
+                    <label for="new">새로워진 뚜레쥬르 <i class="fas fa-plus"></i></label>
+                    <ul class="sub">
+                        <li><a href="#" title="new 뚜레쥬르 살펴보기"> &bull; new 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#" title="건강한 데일리 베이커리"> &bull; 건강한 데일리 베이커리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" id="info" name="a">
+                    <label for="info">제품안내 <i class="fas fa-plus"></i></label>
+                    <ul class="sub">
+                        <li><a href="#" title="신제품"> &bull; 신제품</a></li>
+                        <li><a href="#" title="빵"> &bull; 빵</a></li>
+                        <li><a href="#" title="케이크"> &bull; 케이크</a></li>
+                        <li><a href="#" title="델리"> &bull; 델리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" id="event" name="a">
+                    <label for="event">이벤트&할인혜택 <i class="fas fa-plus"></i></label>
+                    <ul class="sub">
+                        <li><a href="#" title="진행중인 이벤트"> &bull; 진행중인 이벤트</a></li>
+                        <li><a href="#" title="이벤트 당첨자"> &bull; 이벤트 당첨자</a></li>
+                        <li><a href="#" title="CJ ONE 멤버심"> &bull; CJ ONE 멤버심</a></li>
+                        <li><a href="#" title="제휴혜택"> &bull; 제휴혜택</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" id="app" name="a">
+                    <label for="app">뚜레쥬르 앱& 온라인 쇼핑몰<i class="fas fa-plus"></i></label>
+                    <ul class="sub">
+                        <li><a href="#" title="뚜레쥬르 앱"> &bull; 뚜레쥬르 앱</a></li>
+                        <li><a href="#" title="홈페이지 전용 예약 배송"> &bull; 홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#" title="꽃 & 케이크 택배 배송"> &bull; 꽃 & 케이크 택배 배송</a></li>
+                        <li><a href="#" title="대량 구매 문의"> &bull; 대량 구매 문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" id="franchise" name="a">
+                    <label for="franchise">창업안내 <i class="fas fa-plus"></i></label>
+                    <ul class="sub">
+                        <li><a href="#" title="안내페이지"> &bull; 안내페이지</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 메인영역시작 -->
+    <main>
+        <article>
+            <h2>제품소개</h2>
+            <ul>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4891&page=7" title="카라멜 애플파이">
+                        <img src="./img/apple.png" alt="카라멜 애플파이">
+                        <dl>
+                            <dt>카라멜 애플파이</dt>
+                            <dd>바삭한 파이 속 달콤한 카라멜과 시나몬 풍미가 풍부한 사과 필링이 듬뿍 들어있는 제품</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4674&page=5" title="스위트밤블랑">
+                        <img src="./img/bam.jpg" alt="스위트밤블랑">
+                        <dl>
+                            <dt>스위트밤블랑</dt>
+                            <dd>겹겹이 돌돌말린 달콤하고 촉촉한 패스트리에 밤 원물을 통째로 가득 넣어 뜯어먹기 좋은 밤 몽블랑</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4895&page=2" title="마롱크림롤">
+                        <img src="./img/marong.jpg" alt="마롱크림롤">
+                        <dl>
+                            <dt>마롱크림롤</dt>
+                            <dd>바삭하게 카라멜 코팅된 달콤한 패스트리에 풍미가 좋은 밤 크림을 듬뿍 넣은 가을 시즌 크림롤</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4837&page=3" title="우유스틱브레드">
+                        <img src="./img/milk.jpg" alt="우유스틱브레드">
+                        <dl>
+                            <dt>우유스틱브레드</dt>
+                            <dd>물 없이 청정 제주의 우유로만 반죽하여 더욱 촉촉하고 부드러운 식감과 계란, 버터로 영양 가득한 스틱 브레드</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4796&page=4" title="츄러스 꽈배기">
+                        <img src="./img/gi.jpg" alt="츄러스 꽈배기">
+                        <dl>
+                            <dt>츄러스 꽈배기</dt>
+                            <dd>결결이 바삭한 식감의 패스트리에 달콤한 시나몬 설탕을 토핑한 간식형 제품</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4657&page=5" title="퐁신퐁신 우유 도넛">
+                        <img src="./img/donut.jpg" alt="퐁신퐁신 우유 도넛">
+                        <dl>
+                            <dt>퐁신퐁신 우유 도넛</dt>
+                            <dd>폭신한 도넛 속 달콤한 바닐라우유크림을 가득 샌드한 제품</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=4808&page=3" title="데일리 블루베리 베이글">
+                        <img src="./img/bagle.jpg" alt="데일리 블루베리 베이글">
+                        <dl>
+                            <dt>데일리 블루베리 베이글</dt>
+                            <dd>폭신하고 쫄깃한 기지에 새콤달콤한 블루베리가 콕콕 박혀있는 블루베리 베이글</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tlj.co.kr/product/detail.asp?gubun=list&ref=2&cg_num=&prod_num=3909&page=12" title="사르르 고구마케이크 빵">
+                        <img src="./img/sweet.jpg" alt="사르르 고구마케이크 빵">
+                        <dl>
+                            <dt>사르르 고구마케이크 빵</dt>
+                            <dd>고구마를 닮은 빵에 부드러운 크림과 고구마 필링이 듬뿍 들어있어 입안에서 사르르 녹는 빵</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <!-- 푸터영역서식 -->
+    <footer>
+        <address> 서울시 종로구 구기동 국일관 2층<br>
+        Copyright&copy;2017 모바일 레이아웃 all rightes reserved</address>
+    </footer>
+</body>
+</html>
